@@ -5,6 +5,7 @@ import categoriesRouter from './categories/router';
 import recipesRouter from './recipes/router';
 import menuRouter from './menu/router';
 import GameRouter from './videoGames/router';
+import veterinariaRouter from './veterinaria/router';
 
 const router = (app: Express) => {
     app.use("/auth", authRouter);
@@ -13,6 +14,7 @@ const router = (app: Express) => {
     app.use("/recipes", recipesRouter);
     app.use("/menu", menuRouter);
     app.use("/games", GameRouter);
+    app.use("/veterinaria", veterinariaRouter);
 }
 
 export default router;
